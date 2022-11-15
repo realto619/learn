@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Learn To Read Music</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <section>
+    <div class="container">
+      <div class="header">
+        <h1>Learn To Read Music</h1>
+      </div>
+      <div class="question">
+        <div class="question_number">
+          Question<br>Number
+          <div class="qst_num"></div>
+        </div>
+      </div>
+      <div class="octaves">
+
+        <div id="octaves" class="test_chkboxes">
+          <strong>Octaves</strong>
+          <label for="oct7">Oct7</label><input type="checkbox" class="octave" id="oct7">
+          <label for="oct6">Oct6</label><input type="checkbox" class="octave" id="oct6">
+          <label for="oct5">Oct5</label><input type="checkbox" class="octave" id="oct5">
+          <label for="oct4">Oct4</label><input type="checkbox" class="octave" id="oct4">
+          <label for="oct3">Oct3</label><input type="checkbox" class="octave" id="oct3">
+        </div>
+
+      </div>
+      <div class="shownotes">
+        <button class="newNote" id="quiz" title="Start testing your knowledge!">Start<br>Quiz</button>
+      </div>
+      <!-- <div class="shownotes">
+        <div class="showNotes input_buttons">
+          <label for="showNotes" class="small wrap">Show Notes</label>
+          <input type="checkbox" name="showNotes" id="showNotes" title="Show Notes in Right Margin">
+        </div>
+      </div> -->
+
+      <div class="msg">
+        <div id="user_input" class="user_input">?</div>
+        <button id="checkIt">Check<br>Answer</button>
+      </div>
+      <div class="staff">
+        <img src="https://notation.netcentrx.net/learn/img/treble_clef_150x420.svg" class="treble" alt="Treble Clef">
+        <div class="notes">
+          <div class="spacer_1"></div>
+          <div class="spacer_2"></div>
+          <div class="spacer_3"></div>
+          <div class="spacer_4"></div>
+
+          <div class="c8_1"></div>
+          <div class="c8_2 note"></div>
+          <div class="c8_3 shownote shownote-top"></div>
+          <div class="c8_4"></div>
+
+          <div class="b7_1"></div>
+          <div class="b7_2 note"></div>
+          <div class="b7_3 shownote"></div>
+          <div class="b7_4"></div>
+          <div class="a7_1"></div>
+          <div class="a7_2 note"></div>
+          <div class="a7_3 shownote"></div>
+          <div class="a7_4"></div>
+          <div class="g7_1"></div>
+          <div class="g7_2 note"></div>
+          <div class="g7_3 shownote"></div>
+          <div class="g7_4"></div>
+          <div class="f7_1"></div>
+          <div class="f7_2 note"></div>
+          <div class="f7_3 shownote"></div>
+          <div class="f7_4"></div>
+          <div class="e7_1"></div>
+          <div class="e7_2 note"></div>
+          <div class="e7_3 shownote"></div>
+          <div class="e7_4"></div>
+          <div class="d7_1"></div>
+          <div class="d7_2 note"></div>
+          <div class="d7_3 shownote"></div>
+          <div class="d7_4"></div>
+          <div class="c7_1" onclick="document.getElementById('showNotes').click()"> 
+            <div class="show-notes">
+              <div class="showNotes input_buttons">
+                <label for="showNotes" class="small wrap">Show Notes</label>
+                <input type="checkbox" name="showNotes" id="showNotes" title="Show Notes in Right Margin">
+              </div>
+            </div>
+      
+          </div>
+          <div class="c7_2 note"></div>
+          <div class="c7_3 shownote"></div>
+          <div class="c7_4"></div>
+
+          <div class="b6_1" onclick="document.getElementById('showNotes').click()"></div>
+          <div class="b6_2 note"></div>
+          <div class="b6_3 shownote"></div>
+          <div class="b6_4"></div>
+          <div class="a6_1" onclick="document.getElementById('showNotes').click()"></div>
+          <div class="a6_2 note"></div>
+          <div class="a6_3 shownote"></div>
+          <div class="a6_4"></div>
+          <div class="g6_1" onclick="document.getElementById('showNotes').click()"></div>
+          <div class="g6_2 note"></div>
+          <div class="g6_3 shownote"></div>
+          <div class="g6_4"></div>
+          <div class="f6_1" onclick="document.getElementById('showNotes').click()"></div>
+          <div class="f6_2 note"></div>
+          <div class="f6_3 shownote"></div>
+          <div class="f6_4"></div>
+          <div class="e6_1" onclick="document.getElementById('showNotes').click()"></div>
+          <div class="e6_2 note"></div>
+          <div class="e6_3 shownote"></div>
+          <div class="e6_4"></div>
+          <div class="d6_1"></div>
+          <div class="d6_2 note"></div>
+          <div class="d6_3 shownote"></div>
+          <div class="d6_4"></div>
+          <div class="c6_1"></div>
+          <div class="c6_2 note"></div>
+          <div class="c6_3 shownote"></div>
+          <div class="c6_4"></div>
+
+          <div class="b5_1"></div>
+          <div class="b5_2 note"></div>
+          <div class="b5_3 shownote"></div>
+          <div class="b5_4"></div>
+          <div class="a5_1"></div>
+          <div class="a5_2 note"></div>
+          <div class="a5_3 shownote"></div>
+          <div class="a5_4"></div>
+          <div class="g5_1"></div>
+          <div class="g5_2 note"></div>
+          <div class="g5_3 shownote"></div>
+          <div class="g5_4"></div>
+          <div class="f5_1"></div>
+          <div class="f5_2 note"></div>
+          <div class="f5_3 shownote"></div>
+          <div class="f5_4"></div>
+          <div class="e5_1"></div>
+          <div class="e5_2 note"></div>
+          <div class="e5_3 shownote"></div>
+          <div class="e5_4"></div>
+          <div class="d5_1"></div>
+          <div class="d5_2 note"></div>
+          <div class="d5_3 shownote"></div>
+          <div class="d5_4"></div>
+          <div class="c5_1"></div>
+          <div class="c5_2 note"></div>
+          <div class="c5_3 shownote"></div>
+          <div class="c5_4"></div>
+
+          <div class="b4_1"></div>
+          <div class="b4_2 note"></div>
+          <div class="b4_3 shownote"></div>
+          <div class="b4_4"></div>
+          <div class="a4_1"></div>
+          <div class="a4_2 note"></div>
+          <div class="a4_3 shownote"></div>
+          <div class="a4_4"></div>
+          <div class="g4_1"></div>
+          <div class="g4_2 note"></div>
+          <div class="g4_3 shownote"></div>
+          <div class="g4_4"></div>
+          <div class="f4_1"></div>
+          <div class="f4_2 note"></div>
+          <div class="f4_3 shownote"></div>
+          <div class="f4_4"></div>
+          <div class="e4_1"></div>
+          <div class="e4_2 note"></div>
+          <div class="e4_3 shownote"></div>
+          <div class="e4_4"></div>
+          <div class="d4_1"></div>
+          <div class="d4_2 note"></div>
+          <div class="d4_3 shownote"></div>
+          <div class="d4_4"></div>
+          <div class="c4_1"></div>
+          <div class="c4_2 note"></div>
+          <div class="c4_3 shownote"></div>
+          <div class="c4_4"></div>
+
+          <div class="b3_1"></div>
+          <div class="b3_2 note"></div>
+          <div class="b3_3 shownote"></div>
+          <div class="b3_4"></div>
+          <div class="a3_1"></div>
+          <div class="a3_2 note"></div>
+          <div class="a3_3 shownote"></div>
+          <div class="a3_4"></div>
+          <div class="g3_1"></div>
+          <div class="g3_2 note"></div>
+          <div class="g3_3 shownote"></div>
+          <div class="g3_4"></div>
+          <div class="f3_1"></div>
+          <div class="f3_2 note"></div>
+          <div class="f3_3 shownote"></div>
+          <div class="f3_4"></div>
+          <div class="e3_1"></div>
+          <div class="e3_2 note"></div>
+          <div class="e3_3 shownote"></div>
+          <div class="e3_4"></div>
+          <div class="d3_1"></div>
+          <div class="d3_2 note"></div>
+          <div class="d3_3 shownote"></div>
+          <div class="d3_4"></div>
+          <div class="c3_1"></div>
+          <div class="c3_2 note"></div>
+          <div class="c3_3 shownote shownote-bottom"></div>
+          <div class="c3_4"></div>
+        </div>
+        <!--notes-->
+      </div>
+
+      <!--BEGIN stored values -->
+      <input id="lastNote" name="lastNote" value="" type="hidden">
+      <input id="quiz_questions_total" name="quiz_questions_total" value="5" type="hidden">
+      <input id="current_quiz_question" name="current_quiz_question" value="1" type="hidden">
+      <input id="quiz_question_number" name="quiz_question_number" value="0" type="hidden">
+      <input id="quiz_questions_correct" name="quiz_questions_correct" value="0" type="hidden">
+      <!--END stored values -->
+
+
+      <div class="buttons" id="buttons" title="You can also use the keys A - G and the number pad">
+        <div class="btn-group-spacing" role="group">
+          <div id="A" data-note="A" class="select_note btn bg-teal no_select" role="button">A</div>
+          <div id="B" data-note="B" class="select_note btn bg-teal no_select" role="button">B</div>
+          <div id="C" data-note="C" class="select_note btn bg-teal no_select" role="button">C</div>
+          <div id="D" data-note="D" class="select_note btn bg-teal no_select" role="button">D</div>
+          <div id="E" data-note="E" class="select_note btn bg-teal no_select" role="button">E</div>
+          <div id="F" data-note="F" class="select_note btn bg-teal no_select" role="button">F</div>
+          <div id="G" data-note="G" class="select_note btn bg-teal no_select" role="button">G</div>
+        </div>
+
+        <div class="console"></div>
+        <div class="footer"></div>
+      </div>
+  </section>
+
+  <script src="https://js.netcentrx.net/unlock-safari-audio.js"></script>
+  <script src="https://js.netcentrx.net/msgbox-v2.4.js"></script>
+  <script src="./js/script.js"></script>
+  <script>
+
+  </script>
+</body>
+
+</html>
